@@ -18,10 +18,10 @@ const Text = styled('p', {
   },
 });
 
-const Home = () => (
+const AlertDialog = () => (
   <Text as="h3" size="3">
     Hello, from Stitches.
   </Text>
 );
 
-export { Home };
+export { AlertDialog };
