@@ -1,7 +1,7 @@
 import { AppThemeProvider } from './contexts/app-theme';
 import { useTheme } from './hooks/useTheme';
 
-import { lightTheme } from './styles/theme/light';
+import { darkTheme } from './styles/theme/dark';
 
 import {
   styled,
@@ -13,7 +13,7 @@ import {
 } from './stitches/config';
 
 export {
-  lightTheme,
+  darkTheme,
   configTheme,
   AppThemeProvider,
   useTheme,

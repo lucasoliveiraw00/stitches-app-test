@@ -14,7 +14,11 @@ const defaultTheme = {
   sizes: {},
   borderWidths: {},
   borderStyles: {},
-  radii: {},
+  radii: {
+    small: '6px',
+    medium: '8px',
+    large: '10px',
+  },
   shadows: {},
   zIndices: {},
   transitions: {},

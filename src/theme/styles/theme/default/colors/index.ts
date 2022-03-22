@@ -2,8 +2,9 @@ import { Palette } from './types';
 
 const palette: Palette = {
   white: ['#ffffff'],
-  teal: ['#206A7F', '#54B8D3'],
-  green: ['#1D7246', '#47D089'],
+  teal: ['#2c91ad', '#206a7f', '#54b8d3'],
+  green: ['#29A152', '#1d7246', '#47d089'],
+  orange: ['#F27A00', 'rgba(242, 122, 0, 0.5)'],
 };
 
 const colors = {
@@ -11,13 +12,22 @@ const colors = {
 
   green: palette.green[0],
   green100: palette.green[1],
+  green200: palette.green[2],
 
   teal: palette.teal[0],
   teal100: palette.teal[1],
+  teal200: palette.teal[2],
+
+  orange: palette.orange[0],
+  orange100: palette.orange[1],
+
+  gray: '#1D1D26',
+  gray100: '#B8C0CC',
 
   negative: '#E61739',
-  warning: '#F27A00',
-  gray: '#1D1D26',
+  warning: '$orange',
+
+  backgroundColor: '#F4F8FA',
 };
 
 export { colors };
