@@ -1,27 +1,16 @@
-import { styled } from '../../../../theme';
-
-const Text = styled('p', {
-  fontFamily: '$untitled',
-  color: '$gray',
-  variants: {
-    size: {
-      1: {
-        fontSize: '$1',
-      },
-      2: {
-        fontSize: '$2',
-      },
-      3: {
-        fontSize: '$3',
-      },
-    },
-  },
-});
+import { AlertDialog } from '../../../../components/alert-dialog';
 
 const Home = () => (
-  <Text as="h3" size="3">
-    Hello, from Stitches.
-  </Text>
+  <div>
+    <AlertDialog
+      triggerButtonName="Excluir Conta"
+      cancelButtonName="Cancelar"
+      confirmButtonName="Ok, Excluir"
+      title="Você tem certeza absoluta?"
+      description="Essa ação não pode ser desfeita. Isso excluirá permanentemente seu
+              conta e remover seus dados de nossos servidores."
+    />
+  </div>
 );
 
 export { Home };

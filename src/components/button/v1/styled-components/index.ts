@@ -7,15 +7,23 @@ export const Button = styled('button', {
   borderRadius: '$small',
   border: 'unset',
   cursor: 'pointer',
-  transition: '0.8s',
   '&:hover': {
     opacity: 0.8,
   },
   variants: {
-    color: {
+    btn: {
+      secondary: { backgroundColor: '$gray100', color: '$white' },
       success: { backgroundColor: '$green', color: '$white' },
       info: { backgroundColor: '$teal', color: '$white' },
       warning: { backgroundColor: '$warning', color: '$white' },
+      danger: { backgroundColor: '$danger', color: '$white' },
+      link: {
+        backgroundColor: 'transparent',
+        color: '$teal200',
+        '&:hover': {
+          textDecoration: 'underline',
+        },
+      },
     },
     size: {
       small: {
@@ -47,10 +55,21 @@ export const Button = styled('button', {
         },
       },
     },
+    block: {
+      true: {
+        width: '100%',
+      },
+    },
+    disabled: {
+      true: {
+        opacity: 0.65,
+        pointerEvents: 'none',
+      },
+    },
   },
   compoundVariants: [
     {
-      color: 'success',
+      btn: 'success',
       outlined: true,
       css: {
         color: '$green',
@@ -61,7 +80,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'info',
+      btn: 'info',
       outlined: true,
       css: {
         color: '$teal',
@@ -72,7 +91,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'warning',
+      btn: 'warning',
       outlined: true,
       css: {
         color: '$warning',
@@ -82,6 +101,28 @@ export const Button = styled('button', {
         },
       },
     },
+    {
+      btn: 'danger',
+      outlined: true,
+      css: {
+        color: '$danger',
+        borderColor: '$danger',
+        '&:hover': {
+          backgroundColor: '$danger',
+        },
+      },
+    },
+    {
+      btn: 'secondary',
+      outlined: true,
+      css: {
+        color: '$gray100',
+        borderColor: '$gray100',
+        '&:hover': {
+          backgroundColor: '$gray100',
+        },
+      },
+    },
   ],
-  defaultVariants: { color: 'success', size: 'small' },
+  defaultVariants: { btn: 'success', size: 'small' },
 });

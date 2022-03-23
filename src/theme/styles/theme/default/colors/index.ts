@@ -24,7 +24,7 @@ const colors = {
   gray: '#1D1D26',
   gray100: '#B8C0CC',
 
-  negative: '#E61739',
+  danger: '#E61739',
   warning: '$orange',
 
   backgroundColor: '#F4F8FA',
