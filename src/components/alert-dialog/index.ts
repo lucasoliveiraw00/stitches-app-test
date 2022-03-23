@@ -1,3 +1,3 @@
-import { AlertDialog } from './v1/components/default';
+import { AlertDialog } from './v1';
 
 export { AlertDialog };

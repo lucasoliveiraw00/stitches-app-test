@@ -1,3 +1,3 @@
-import { AppContainer } from './v1/components/default';
+import { AppContainer } from './v1';
 
 export { AppContainer };
