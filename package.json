@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^0.1.7",
     "@stitches/react": "^1.2.7",
     "next": "12.1.0",
     "react": "17.0.2",
