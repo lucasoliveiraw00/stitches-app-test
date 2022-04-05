@@ -23,6 +23,8 @@ const colors = {
 
   gray: '#1D1D26',
   gray100: '#B8C0CC',
+  gray200: 'hsl(256, 6.0%, 93.2%)',
+  gray300: 'hsl(253, 4.0%, 63.7%)',
 
   danger: '#E61739',
   warning: '$orange',

@@ -12,14 +12,21 @@ const defaultTheme = {
   lineHeights: {},
   letterSpacings: {},
   sizes: {},
-  borderWidths: {},
-  borderStyles: {},
+  borderWidths: {
+    bw1: 0.5,
+  },
+  borderStyles: {
+    default: 'solid',
+  },
   radii: {
     small: '6px',
     medium: '8px',
     large: '10px',
   },
-  shadows: {},
+  shadows: {
+    teal200: '$colors$teal200',
+    gray200: '$colors$gray200',
+  },
   zIndices: {},
   transitions: {},
 };
